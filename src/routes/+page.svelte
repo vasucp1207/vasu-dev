@@ -35,6 +35,12 @@
 	.cont {
 		display: flex;
 		justify-content: center;
+		margin: 0;
+		padding: 0;
+		font-family: Public Sans, system-ui;
+		font-weight: 20px;
+		line-height: 1.5rem;
+		letter-spacing: 0.5px;
 	}
 	.wrap {
 		max-width: 700px;

@@ -11,7 +11,7 @@
 		<div class='footer'>
 			<a href='https://twitter.com/vasucp1207' target='_blank'>Twitter</a>
 			<a href='https://github.com/vasucp1207' target='_blank'>Github</a>
-			<a href='https://3dweb.hashnode.dev/' target='_blank'>Blog</a>
+			<a href='/blogs'>Blog</a>
 		</div>
 	</footer>
 </div>
@@ -28,6 +28,7 @@
 		background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
 	}
 	footer {
+		font-family: Public Sans, system-ui;
 		display: flex;
 		justify-content: center;
 	}
