@@ -1,12 +1,24 @@
 ::selection {
-  color: #b91372;
-  background: #f3eeef;
+	color: #b91372;
+	background: #f3eeef;
+	-webkit-text-fill-color: #b91372;
 }
 
 :root {
 	--light-black: #333333;
 	--dark-gray: #444444;
 	--light-gray: #666666;
+}
+
+@media only screen and (max-width: 800px) {
+	.wrap,
+	.blog {
+		width: 450px;
+	}
+	.footer,
+	.blog-home-cont {
+		max-width: 450px;
+	}
 }
 
 svg {
@@ -18,33 +30,35 @@ svg {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+	width: 8px;
 	z-index: -1;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f8f8f8;
+	background: #f8f8f8;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b91372;
+	background-color: #6b0f1a;
+	background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
 }
 
-h1, h2 {
+h1,
+h2 {
 	color: var(--light-black);
 	text-decoration: underline 2px #efb2bd;
 }
 
-ul>li {
+ul > li {
 	font-size: 17px;
 	line-height: 1.5rem;
 	letter-spacing: 0.5px;
 	color: var(--dark-gray);
 }
 
-ul>li::marker {
+ul > li::marker {
 	color: #b91372;
 }
 
@@ -55,7 +69,8 @@ pre {
 	font-size: 14px;
 }
 
-.appwrite-img, .next-appwrite {
+.appwrite-img,
+.next-appwrite {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	width: 100%;

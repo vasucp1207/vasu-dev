@@ -6,7 +6,7 @@
 </script>
 
 <div class='blog-wrap'>
-  <div class='blog-cont'>
+  <div class='blog-home-cont'>
       <div class='blogs-head'>Blogs</div>
 
       <div class='blog-list'>
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
   }
-  .blog-cont {
+  .blog-home-cont {
     margin-top: 60px;
     width: 700px;
     font-family: Public Sans, system-ui;

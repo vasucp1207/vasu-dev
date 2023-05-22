@@ -1,8 +1,10 @@
 <script>
+	import Header from './Header.svelte';
 </script>
 
 <div class="app">
 	<div class='top-line' />
+	<Header />
 	<main>
 		<slot />
 	</main>
