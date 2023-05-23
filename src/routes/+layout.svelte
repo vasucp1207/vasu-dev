@@ -39,7 +39,7 @@
 		width: 700px;
 		display: flex;
 		justify-content: space-around;
-		text-decoration: underline 2px #eaeaef;
+		text-decoration: underline 2px #efb2bd;
 	}
 	.footer>a {
 		cursor: alias;

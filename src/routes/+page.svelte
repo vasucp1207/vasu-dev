@@ -3,6 +3,8 @@
 </script>
 
 <div class='cont'>
+	<div class='gradient-1' />
+	<div class='gradient-2' />
 	<div class='wrap'>
 	<div class='header'>
 		<div class='blob'>VS</div>
@@ -116,7 +118,7 @@
 		margin-bottom: 1rem;
 	}
 	span {
-		text-decoration: underline 2px #eaeaef;
+		text-decoration: underline 2px #efb2bd;
 		font-weight: 500;
 	}
 	.react {
@@ -159,7 +161,7 @@
 	a {
 		width: max-content;
 		display: flex;
-		text-decoration: underline 2px #eaeaef;
+		text-decoration: underline 2px #efb2bd;
 	}
 	li {
 		background: -webkit-linear-gradient(right, #000, #b91372);

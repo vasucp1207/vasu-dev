@@ -1,6 +1,6 @@
 ::selection {
 	color: #b91372;
-	background: #f3eeef;
+	background: #efc5ce;
 	-webkit-text-fill-color: #b91372;
 }
 
@@ -19,6 +19,9 @@
 	.blog-home-cont {
 		max-width: 450px;
 	}
+	.gradient-2 {
+		visibility: hidden;
+	}
 }
 
 svg {
@@ -26,6 +29,26 @@ svg {
 	height: 1rem;
 	margin-left: 10px;
 	margin-right: 3px;
+}
+
+.gradient-1 {
+	left: 0%;
+	position: fixed;
+	height: 300px;
+	width: 300px;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+  filter: blur(300px);
+	z-index: -10;
+}
+
+.gradient-2 {
+	right: 0%;
+	position: fixed;
+	height: 300px;
+	width: 300px;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+  filter: blur(300px);
+	z-index: -10;
 }
 
 /* width */

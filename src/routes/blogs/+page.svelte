@@ -6,6 +6,8 @@
 </script>
 
 <div class='blog-wrap'>
+	<div class='gradient-1' />
+	<div class='gradient-2' />
   <div class='blog-home-cont'>
       <div class='blogs-head'>Blogs</div>
 
@@ -38,7 +40,7 @@
     background: -webkit-linear-gradient(right, #000, #b91372);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-    text-decoration: underline 2px #eaeaef;
+    text-decoration: underline 2px #efb2bd;
   }
   .blog-list {
     margin-top: 3.0rem;
@@ -57,7 +59,7 @@
   }
   .blog-des:hover {
     color: #b91372;
-    background: #f3eeef;
+    background: #efd4da;
     cursor: pointer;
   }
   .blog-name:hover {

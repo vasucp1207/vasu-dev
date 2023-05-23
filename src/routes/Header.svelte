@@ -45,11 +45,11 @@
 		background: -webkit-linear-gradient(right, #000, #b91372);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-    text-decoration: underline 2px #eaeaef;
+    text-decoration: underline 2px #efb2bd;
     padding: 8px;
   }
   .links>a:hover {
-    background: #f3eeef;
+    background: #efc5ce;
     border-radius: 8px;
     -webkit-text-fill-color: #b91372;
     text-decoration: underline 2px #b91372;
