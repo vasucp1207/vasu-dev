@@ -22,13 +22,14 @@
 
 	<a class='gmail' href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vasucp1207@gmail.com" target="_blank">Contect Me!</a>
 
-	<div class='open-source'>My Open Source work</div>
+	<div class='open-source'>My Open Source Projects</div>
 
 	<div class='projects'>
 		<a target='_blank' href='https://github.com/jotaijs/jotai-tutorial'><li>Jotai-Tutorial</li></a>
 		<a target='_blank' href='https://github.com/vasucp1207/sveltronics'><li>Sveltronics</li></a>
 		<a target='_blank' href='https://github.com/vasucp1207/retro-kit'><li>Retro-Kit</li></a>
 		<a target='_blank' href='https://github.com/vasucp1207/appwrite-web-react'><li>Appwrite-Web-React</li></a>
+		<a target='_blank' href='https://github.com/vasucp1207/qwik-table'><li>Qwik Table</li></a>
 	</div>
 	</div>
 </div>
@@ -168,7 +169,10 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-weight: 500;
-		cursor: alias;
+		cursor: cursor;
+	}
+	li:hover {
+		/* background:  */
 	}
 	li::marker {
 		color: #6b0f1a;

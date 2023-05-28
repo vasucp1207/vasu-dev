@@ -49,7 +49,7 @@
     padding: 8px;
   }
   .links>a:hover {
-    background: #efc5ce;
+    background: #efe8ea;
     border-radius: 8px;
     -webkit-text-fill-color: #b91372;
     text-decoration: underline 2px #b91372;

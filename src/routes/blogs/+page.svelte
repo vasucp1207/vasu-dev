@@ -59,7 +59,7 @@
   }
   .blog-des:hover {
     color: #b91372;
-    background: #efd4da;
+    background: #efe8ea;
     cursor: pointer;
   }
   .blog-name:hover {

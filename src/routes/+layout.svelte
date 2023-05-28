@@ -13,7 +13,6 @@
 		<div class='footer'>
 			<a href='https://twitter.com/vasucp1207' target='_blank'>Twitter</a>
 			<a href='https://github.com/vasucp1207' target='_blank'>Github</a>
-			<a href='/blogs'>Blog</a>
 		</div>
 	</footer>
 </div>
@@ -42,7 +41,7 @@
 		text-decoration: underline 2px #efb2bd;
 	}
 	.footer>a {
-		cursor: alias;
+		cursor: pointer;
 		background: -webkit-linear-gradient(right, #000, #b91372);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
