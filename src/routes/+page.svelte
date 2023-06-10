@@ -179,7 +179,7 @@
 		color: white !important;
 	}
 	.contact:after {
-		left: 25px;
+		left: 23px;
 	}
 	li:hover {
     transform: skew(-10deg);
@@ -196,7 +196,7 @@
 		transition: 0.4s;
 		background-image: linear-gradient(90deg,#11998e,#38ef7d);
 		bottom: 2px;
-		left: 20px;
+		left: 23px;
 		opacity: 0;
 	}
 	li::before {
