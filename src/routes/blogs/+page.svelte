@@ -32,15 +32,14 @@
   .blog-home-cont {
     margin-top: 60px;
     width: 700px;
-    font-family: Public Sans, system-ui;
   }
   .blogs-head {
     font-size: 2.5rem;
     font-weight: bold;
-    background: -webkit-linear-gradient(right, #000, #b91372);
+    background: -webkit-linear-gradient(90deg, #11998e, #38ef7d);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-    text-decoration: underline 2px #efb2bd;
+    text-decoration: underline 2px #38ef7d;
   }
   .blog-list {
     margin-top: 3.0rem;
@@ -58,12 +57,12 @@
     text-decoration: none;
   }
   .blog-des:hover {
-    color: #b91372;
-    background: #efe8ea;
+    color: #11998e;
+    background: #e1efe6;
     cursor: pointer;
   }
   .blog-name:hover {
-    text-decoration: underline 2px #b91372;
+    text-decoration: underline 2px #11998e;
   }
   .time {
     font-size: 14px;

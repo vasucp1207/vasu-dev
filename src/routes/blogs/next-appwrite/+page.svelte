@@ -18,6 +18,5 @@
   }
   .blog {
     max-width: 700px;
-    font-family: Public Sans, system-ui;
   }
 </style>

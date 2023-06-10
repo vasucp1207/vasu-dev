@@ -20,7 +20,7 @@
 
 	<div class='learning'>Currently, I am expanding my knowledge and skills by learning Rust, a systems programming language known for its performance, safety, and concurrency features. </div>
 
-	<a class='gmail' href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vasucp1207@gmail.com" target="_blank">Contect Me!</a>
+	<a class='gmail' href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vasucp1207@gmail.com" target="_blank"><li class='contact'>Contact Me!</li></a>
 
 	<div class='open-source'>My Open Source Projects</div>
 
@@ -40,7 +40,7 @@
 		justify-content: center;
 		margin: 0;
 		padding: 0;
-		font-family: Public Sans, system-ui;
+		font-family: "LXGW WenKai Screen R", Public Sans, system-ui;
 		font-weight: 20px;
 		line-height: 1.5rem;
 		letter-spacing: 0.5px;
@@ -56,8 +56,8 @@
   color: white;
   justify-content: center;
   align-items: center;
-  background-color: #6b0f1a;
-	background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+	background-image: linear-gradient(90deg, #11998e, #38ef7d);
+	filter: drop-shadow(0 0 35px #11998e);
 	margin-right: 8px;
   height: 70px;
   width: 70px;
@@ -104,7 +104,7 @@
 	}
 	.intro {
 		font-weight: bold;
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		color: var(--dark-gray);
 		margin-top: 1rem;
 	}
@@ -119,7 +119,6 @@
 		margin-bottom: 1rem;
 	}
 	span {
-		text-decoration: underline 2px #efb2bd;
 		font-weight: 500;
 	}
 	.react {
@@ -162,19 +161,65 @@
 	a {
 		width: max-content;
 		display: flex;
-		text-decoration: underline 2px #efb2bd;
+		text-decoration: none;
 	}
 	li {
-		background: -webkit-linear-gradient(right, #000, #b91372);
+		position: relative;
+		text-decoration: 1px underline #38ef7d;
+		background: -webkit-linear-gradient(90deg, #11998e, #38ef7d);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-weight: 500;
 		cursor: cursor;
 	}
+	.contact {
+		margin-left: -25px;
+	}
+	.contact::marker {
+		color: white !important;
+	}
+	.contact:after {
+		left: 25px;
+	}
 	li:hover {
-		/* background:  */
+    transform: skew(-10deg);
+		transition: 0.2s;
+		text-shadow: 0 0px 30px rgba(56,239,125,0.7), 0 1px 30px rgba(56,239,125,0.7);
+		z-index: 10;
+	}
+	li::after {
+		position: absolute;
+		content: '';
+		width: 10px;
+		height: 3px;
+		display: block;
+		transition: 0.4s;
+		background-image: linear-gradient(90deg,#11998e,#38ef7d);
+		bottom: 2px;
+		left: 20px;
+		opacity: 0;
+	}
+	li::before {
+		position: absolute;
+		content: '';
+		width: 10px;
+		height: 3px;
+		display: block;
+		transition: 0.4s;
+		background-image: linear-gradient(90deg, #38ef7d, #11998e);
+		bottom: 2px;
+		right: 0;
+		opacity: 0;
+	}
+	li:hover::after {
+		width: 40%;
+		opacity: 1;
+	}
+	li:hover::before {
+		width: 60%;
+		opacity: 1;
 	}
 	li::marker {
-		color: #6b0f1a;
+		color: #11998e;
 	}
 </style>

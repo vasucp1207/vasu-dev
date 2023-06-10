@@ -1,13 +1,17 @@
 ::selection {
-	color: #b91372;
-	background: #efe8ea;
-	-webkit-text-fill-color: #b91372;
+	color: #11998e;
+	background: #e1efe6;
+	-webkit-text-fill-color: #11998e;
 }
 
 :root {
-	--light-black: #333333;
+	--light-black: hsl(0, 0%, 20%);
 	--dark-gray: #444444;
 	--light-gray: #666666;
+}
+
+body {
+	font-family: "LXGW WenKai Screen R", Public Sans, system-ui;
 }
 
 @media only screen and (max-width: 800px) {
@@ -31,26 +35,6 @@ svg {
 	margin-right: 3px;
 }
 
-.gradient-1 {
-	left: 0%;
-	position: fixed;
-	/* height: 300px; */
-	width: 300px;
-  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
-  filter: blur(300px);
-	z-index: -10;
-}
-
-.gradient-2 {
-	right: 0%;
-	position: fixed;
-	/* height: 300px; */
-	width: 300px;
-  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
-  filter: blur(300px);
-	z-index: -10;
-}
-
 /* width */
 ::-webkit-scrollbar {
 	width: 8px;
@@ -64,14 +48,14 @@ svg {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background-color: #6b0f1a;
-	background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+	background-color: #11998e;
+	background-image: linear-gradient(90deg, #38ef7d, #11998e);
 }
 
 h1,
 h2 {
 	color: var(--light-black);
-	text-decoration: underline 2px #efb2bd;
+	text-decoration: underline 2px #38ef7d;
 }
 
 ul > li {
@@ -82,7 +66,7 @@ ul > li {
 }
 
 ul > li::marker {
-	color: #b91372;
+	color: #11998e;
 }
 
 pre {
