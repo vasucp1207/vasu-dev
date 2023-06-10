@@ -61,13 +61,52 @@
     background: #e1efe6;
     cursor: pointer;
   }
-  .blog-name:hover {
-    text-decoration: underline 2px #11998e;
-  }
   .time {
     font-size: 14px;
     color: var(--light-gray);
     display: flex;
     align-items: center;
   }
+  .blog-name {
+    position: relative;
+    width: fit-content;
+  }
+  .blog-name:hover {
+    transform: skew(-10deg);
+		transition: 0.2s;
+		text-shadow: 0 0px 30px rgba(56,239,125,0.7), 0 1px 30px rgba(56,239,125,0.7);
+		z-index: 10;
+	}
+	.blog-name::after {
+		position: absolute;
+		content: '';
+		width: 10px;
+		height: 3px;
+		display: block;
+		transition: 0.4s;
+		background-image: linear-gradient(90deg,#11998e,#38ef7d);
+		bottom: -2px;
+		left: 0;
+		opacity: 0;
+	}
+	.blog-name::before {
+		position: absolute;
+		content: '';
+		width: 10px;
+		height: 3px;
+		display: block;
+		transition: 0.4s;
+		background-image: linear-gradient(90deg, #38ef7d, #11998e);
+		bottom: -2px;
+		right: 0;
+		opacity: 0;
+	}
+	.blog-name:hover::after {
+		width: 50%;
+		opacity: 1;
+	}
+	.blog-name:hover::before {
+		width: 50%;
+		opacity: 1;
+	}
 </style>
