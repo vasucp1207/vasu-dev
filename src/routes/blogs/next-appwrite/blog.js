@@ -528,4 +528,4 @@ export default Chat
 - Here, we have a state imageType which is set to true if the current message is an image-url otherwise false if it's a normal string.
 - The user state is used to identify whether we send or receive the current message, we can get the currently logged account details simply with account.get()
 ## The End🥳
-`
+`;

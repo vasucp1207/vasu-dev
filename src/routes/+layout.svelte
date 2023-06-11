@@ -1,23 +1,81 @@
 <script>
 	import Header from './Header.svelte';
+	import { onMount } from 'svelte';
+	import { spring } from 'svelte/motion';
+
+	onMount(() => {
+		const svg = document.getElementById('svg');
+		window.addEventListener('load', (event) => {
+			console.log('The page has fully loaded');
+		});
+	});
+
+	let coords = spring(
+		{ x: 50, y: 50 },
+		{
+			stiffness: 0.03,
+			damping: 0.35
+		}
+	);
+	let dotsCoords = spring(
+		{ x: 50, y: 50 },
+		{
+			stiffness: 0.1,
+			damping: 0.35
+		}
+	);
+
+	let size = spring(30);
+	let dot = spring(5);
 </script>
 
 <div class="app">
-	<div class='top-line' />
+	<svg
+		id="svg"
+		on:mousemove={(e) => {
+			coords.set({ x: e.pageX, y: e.pageY });
+			dotsCoords.set({ x: e.pageX, y: e.pageY });
+		}}
+		on:mousedown={() => dot.set(10)}
+		on:mouseup={() => dot.set(5)}
+	>
+		<circle cx={$coords.x} cy={$coords.y} r={$size} />
+		<circle class="dot" cx={$dotsCoords.x} cy={$dotsCoords.y} r={$dot} />
+	</svg>
+	<div class="top-line" />
 	<Header />
 	<main>
 		<slot />
 	</main>
 
 	<footer>
-		<div class='footer'>
-			<a href='https://twitter.com/vasucp1207' target='_blank'>Twitter</a>
-			<a href='https://github.com/vasucp1207' target='_blank'>Github</a>
+		<div class="footer">
+			<a href="https://twitter.com/vasucp1207" target="_blank">Twitter</a>
+			<a href="https://github.com/vasucp1207" target="_blank">Github</a>
 		</div>
 	</footer>
 </div>
 
 <style>
+	.app {
+		position: relative;
+	}
+	svg {
+		position: absolute;
+		height: 100%;
+		width: 99%;
+	}
+	circle {
+		position: relative;
+		fill: transparent;
+		stroke: var(--light-gray);
+		stroke-width: 1px;
+		z-index: 20;
+	}
+	.dot {
+		fill: var(--light-gray);
+		z-index: 20;
+	}
 	.top-line {
 		position: fixed;
 		top: 0;
@@ -39,7 +97,7 @@
 		justify-content: space-around;
 		text-decoration: underline 1px #38ef7d;
 	}
-	.footer>a {
+	.footer > a {
 		position: relative;
 		cursor: pointer;
 		background: -webkit-linear-gradient(90deg, #11998e, #38ef7d);
@@ -50,24 +108,24 @@
 		padding: 4px;
 		border-radius: 8px;
 	}
-	.footer>a:hover {
-    transform: skew(-10deg);
+	.footer > a:hover {
+		transform: skew(-10deg);
 		transition: 0.2s;
-		text-shadow: 0 0px 30px rgba(56,239,125,0.7), 0 1px 30px rgba(56,239,125,0.7);
+		text-shadow: 0 0px 30px rgba(56, 239, 125, 0.7), 0 1px 30px rgba(56, 239, 125, 0.7);
 		z-index: 10;
 	}
-	.footer>a::after {
+	.footer > a::after {
 		position: absolute;
 		content: '';
 		width: 10px;
 		height: 3px;
 		display: block;
 		transition: 0.4s;
-		background-image: linear-gradient(90deg,#11998e,#38ef7d);
+		background-image: linear-gradient(90deg, #11998e, #38ef7d);
 		bottom: 4px;
 		opacity: 0;
 	}
-	.footer>a::before {
+	.footer > a::before {
 		position: absolute;
 		content: '';
 		width: 10px;
@@ -79,11 +137,11 @@
 		right: 1px;
 		opacity: 0;
 	}
-	.footer>a:hover::after {
+	.footer > a:hover::after {
 		width: 50%;
 		opacity: 1;
 	}
-	.footer>a:hover::before {
+	.footer > a:hover::before {
 		width: 50%;
 		opacity: 1;
 	}

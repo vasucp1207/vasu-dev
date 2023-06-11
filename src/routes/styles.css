@@ -4,14 +4,25 @@
 	-webkit-text-fill-color: #11998e;
 }
 
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+html * {
+	cursor: none !important;
+}
+
 :root {
-	--light-black: hsl(0, 0%, 20%);
+	--light-black: #4a4a4a;
 	--dark-gray: #444444;
 	--light-gray: #666666;
 }
 
 body {
-	font-family: "LXGW WenKai Screen R", Public Sans, system-ui;
+	font-family: 'LXGW WenKai Screen R', Public Sans, system-ui;
+	color: var(--light-black);
 }
 
 @media only screen and (max-width: 800px) {
@@ -23,8 +34,10 @@ body {
 	.blog-home-cont {
 		max-width: 450px;
 	}
-	.gradient-2 {
-		visibility: hidden;
+	.gradient-1,
+	.gradient-2,
+	.gradient-3 {
+		filter: blur(90px);
 	}
 }
 
@@ -49,7 +62,7 @@ svg {
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background-color: #11998e;
-	background-image: linear-gradient(90deg, #38ef7d, #11998e);
+	background-image: linear-gradient(90deg, #11998e, #38ef7d);
 }
 
 h1,
@@ -87,4 +100,67 @@ pre {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+}
+
+.gradient-1 {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: radial-gradient(circle 150px, #11998e, #38ef7d);
+	filter: blur(70px);
+	left: 7%;
+	top: 20%;
+	border-radius: 100px;
+	z-index: -10;
+	animation-name: glow;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+.gradient-2 {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: radial-gradient(circle 150px, #11998e, #38ef7d);
+	filter: blur(70px);
+	right: 7%;
+	top: 40%;
+	border-radius: 100px;
+	z-index: -10;
+	animation-name: glow;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+.gradient-3 {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: radial-gradient(circle 150px, #11998e, #38ef7d);
+	filter: blur(70px);
+	bottom: 0%;
+	right: 40%;
+	border-radius: 100px;
+	z-index: -10;
+	animation-name: glow;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+@keyframes glow {
+	25% {
+		filter: blur(80px);
+	}
+	50% {
+		filter: blur(90px);
+	}
+	75% {
+		filter: blur(80px);
+	}
+	100% {
+		filter: blur(70px);
+	}
 }
