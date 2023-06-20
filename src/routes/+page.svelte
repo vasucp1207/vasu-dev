@@ -3,9 +3,9 @@
 </script>
 
 <div class="cont">
-	<div class="gradient-1" />
+	<!-- <div class="gradient-1" />
 	<div class="gradient-2" />
-	<div class="gradient-3" />
+	<div class="gradient-3" /> -->
 	<div class="wrap">
 		<div class="header">
 			<div class="blob">VS</div>

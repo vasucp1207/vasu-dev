@@ -5,8 +5,8 @@
 </script>
 
 <div class="blog-wrap">
-	<div class="gradient-1" />
-	<div class="gradient-2" />
+	<!-- <div class="gradient-1" />
+	<div class="gradient-2" /> -->
 	<div class="blog-home-cont">
 		<div class="blogs-head">Blogs</div>
 

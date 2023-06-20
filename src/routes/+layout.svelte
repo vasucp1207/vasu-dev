@@ -1,47 +1,8 @@
 <script>
 	import Header from './Header.svelte';
-	import { onMount } from 'svelte';
-	import { spring } from 'svelte/motion';
-
-	onMount(() => {
-		const svg = document.getElementById('svg');
-		window.addEventListener('load', (event) => {
-			console.log('The page has fully loaded');
-		});
-	});
-
-	let coords = spring(
-		{ x: 50, y: 50 },
-		{
-			stiffness: 0.03,
-			damping: 0.35
-		}
-	);
-	let dotsCoords = spring(
-		{ x: 50, y: 50 },
-		{
-			stiffness: 0.1,
-			damping: 0.35
-		}
-	);
-
-	let size = spring(30);
-	let dot = spring(5);
 </script>
 
 <div class="app">
-	<svg
-		id="svg"
-		on:mousemove={(e) => {
-			coords.set({ x: e.pageX, y: e.pageY });
-			dotsCoords.set({ x: e.pageX, y: e.pageY });
-		}}
-		on:mousedown={() => dot.set(10)}
-		on:mouseup={() => dot.set(5)}
-	>
-		<circle cx={$coords.x} cy={$coords.y} r={$size} />
-		<circle class="dot" cx={$dotsCoords.x} cy={$dotsCoords.y} r={$dot} />
-	</svg>
 	<div class="top-line" />
 	<Header />
 	<main>
@@ -59,22 +20,6 @@
 <style>
 	.app {
 		position: relative;
-	}
-	svg {
-		position: absolute;
-		height: 100%;
-		width: 99%;
-	}
-	circle {
-		position: relative;
-		fill: transparent;
-		stroke: var(--light-gray);
-		stroke-width: 1px;
-		z-index: 20;
-	}
-	.dot {
-		fill: var(--light-gray);
-		z-index: 20;
 	}
 	.top-line {
 		position: fixed;
