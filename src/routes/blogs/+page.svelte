@@ -5,8 +5,6 @@
 </script>
 
 <div class="blog-wrap">
-	<!-- <div class="gradient-1" />
-	<div class="gradient-2" /> -->
 	<div class="blog-home-cont">
 		<div class="blogs-head">Blogs</div>
 
@@ -35,10 +33,8 @@
 	.blogs-head {
 		font-size: 2.5rem;
 		font-weight: bold;
-		background: -webkit-linear-gradient(90deg, #11998e, #38ef7d);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		text-decoration: underline 2px #38ef7d;
+		color: black;
+		text-decoration: underline 2px var(--underline);
 	}
 	.blog-list {
 		margin-top: 3rem;
@@ -56,8 +52,7 @@
 		text-decoration: none;
 	}
 	.blog-des:hover {
-		color: #11998e;
-		background: #e1efe6;
+		background: var(--light-bg);
 		cursor: pointer;
 	}
 	.time {
@@ -69,43 +64,5 @@
 	.blog-name {
 		position: relative;
 		width: fit-content;
-	}
-	.blog-name:hover {
-		transform: skew(-10deg);
-		transition: 0.2s;
-		text-shadow: 0 0px 30px rgba(56, 239, 125, 0.7), 0 1px 30px rgba(56, 239, 125, 0.7);
-		z-index: 10;
-	}
-	.blog-name::after {
-		position: absolute;
-		content: '';
-		width: 10px;
-		height: 3px;
-		display: block;
-		transition: 0.4s;
-		background-image: linear-gradient(90deg, #11998e, #38ef7d);
-		bottom: -2px;
-		left: 0;
-		opacity: 0;
-	}
-	.blog-name::before {
-		position: absolute;
-		content: '';
-		width: 10px;
-		height: 3px;
-		display: block;
-		transition: 0.4s;
-		background-image: linear-gradient(90deg, #38ef7d, #11998e);
-		bottom: -2px;
-		right: 0;
-		opacity: 0;
-	}
-	.blog-name:hover::after {
-		width: 50%;
-		opacity: 1;
-	}
-	.blog-name:hover::before {
-		width: 50%;
-		opacity: 1;
 	}
 </style>

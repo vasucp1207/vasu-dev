@@ -28,7 +28,7 @@
 		right: 0;
 		height: 5px;
 		width: 100vw;
-		background-image: linear-gradient(90deg, #11998e, #38ef7d);
+		background: black;
 	}
 	footer {
 		font-family: Public Sans, system-ui;
@@ -40,54 +40,18 @@
 		width: 700px;
 		display: flex;
 		justify-content: space-around;
-		text-decoration: underline 1px #38ef7d;
 	}
 	.footer > a {
 		position: relative;
 		cursor: pointer;
-		background: -webkit-linear-gradient(90deg, #11998e, #38ef7d);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-weight: 500;
-		color: white;
+		font-weight: 400;
+		color: var(--text-black);
 		padding: 4px;
 		border-radius: 8px;
+		text-decoration: underline 2px var(--underline);
 	}
-	.footer > a:hover {
-		transform: skew(-10deg);
-		transition: 0.2s;
-		text-shadow: 0 0px 30px rgba(56, 239, 125, 0.7), 0 1px 30px rgba(56, 239, 125, 0.7);
-		z-index: 10;
-	}
-	.footer > a::after {
-		position: absolute;
-		content: '';
-		width: 10px;
-		height: 3px;
-		display: block;
-		transition: 0.4s;
-		background-image: linear-gradient(90deg, #11998e, #38ef7d);
-		bottom: 4px;
-		opacity: 0;
-	}
-	.footer > a::before {
-		position: absolute;
-		content: '';
-		width: 10px;
-		height: 3px;
-		display: block;
-		transition: 0.4s;
-		background-image: linear-gradient(90deg, #38ef7d, #11998e);
-		bottom: 4px;
-		right: 1px;
-		opacity: 0;
-	}
-	.footer > a:hover::after {
-		width: 50%;
-		opacity: 1;
-	}
-	.footer > a:hover::before {
-		width: 50%;
-		opacity: 1;
+	a:hover {
+		color: black;
+		text-decoration: underline 2px black;
 	}
 </style>

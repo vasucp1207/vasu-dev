@@ -3,9 +3,6 @@
 </script>
 
 <div class="cont">
-	<!-- <div class="gradient-1" />
-	<div class="gradient-2" />
-	<div class="gradient-3" /> -->
 	<div class="wrap">
 		<div class="header">
 			<div class="blob">VS</div>
@@ -59,8 +56,7 @@
 		justify-content: center;
 		margin: 0;
 		padding: 0;
-		font-family: 'LXGW WenKai Screen R', Public Sans, system-ui;
-		font-weight: 20px;
+		font-family: Public Sans, system-ui;
 		line-height: 1.5rem;
 		letter-spacing: 0.5px;
 	}
@@ -75,8 +71,8 @@
 		color: white;
 		justify-content: center;
 		align-items: center;
-		background-image: linear-gradient(90deg, #11998e, #38ef7d);
-		filter: drop-shadow(0 0 35px #11998e);
+		background-image: linear-gradient(90deg, var(--text-black), black);
+		filter: drop-shadow(0 0 35px var(--underline));
 		margin-right: 8px;
 		height: 70px;
 		width: 70px;
@@ -109,11 +105,10 @@
 		}
 	}
 	.name {
-		font-weight: bold;
-		color: var(--dark-gray);
+		font-weight: 300;
+		color: var(--text-black);
 	}
 	.work {
-		font-weight: normal;
 		color: var(--light-gray);
 	}
 	.header {
@@ -122,56 +117,28 @@
 		gap: 5px;
 	}
 	.intro {
-		font-weight: bold;
 		font-size: 1.8rem;
-		color: var(--dark-gray);
+		color: black;
 		margin-top: 1rem;
 	}
 	.description {
-		margin-top: 1rem;
-		color: var(--light-black);
+		margin-top: 1.4rem;
+		color: var(--text-black);
 		margin-bottom: 1rem;
 	}
 	.interset {
 		margin-top: 1rem;
-		color: var(--light-black);
+		color: var(--text-black);
 		margin-bottom: 1rem;
-	}
-	span {
-		font-weight: 500;
-	}
-	.react {
-		background: -webkit-linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	.svelte {
-		background: -webkit-linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	.solid {
-		background: -webkit-linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	.qwik {
-		background: -webkit-linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
 	}
 	.gmail {
 		font-size: 18px;
-		font-weight: 500;
 		margin-top: 1rem;
-		background: -webkit-linear-gradient(315deg, #00bfb2 0%, #028090 74%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		color: var(--text-black);
 	}
 	.open-source {
 		font-size: 1.5rem;
-		font-weight: bold;
-		color: var(--dark-gray);
+		color: black;
 		margin-top: 1.3rem;
 	}
 	.projects {
@@ -184,11 +151,8 @@
 	}
 	li {
 		position: relative;
-		text-decoration: 1px underline #38ef7d;
-		background: -webkit-linear-gradient(90deg, #11998e, #38ef7d);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-weight: 500;
+		color: var(--text-black);
+		text-decoration: 2px underline var(--underline);
 		cursor: cursor;
 	}
 	.contact {
@@ -201,44 +165,10 @@
 		left: 23px;
 	}
 	li:hover {
-		transform: skew(-10deg);
-		transition: 0.2s;
-		text-shadow: 0 0px 30px rgba(56, 239, 125, 0.7), 0 1px 30px rgba(56, 239, 125, 0.7);
-		z-index: 10;
-	}
-	li::after {
-		position: absolute;
-		content: '';
-		width: 10px;
-		height: 3px;
-		display: block;
-		transition: 0.4s;
-		background-image: linear-gradient(90deg, #11998e, #38ef7d);
-		bottom: 2px;
-		left: 23px;
-		opacity: 0;
-	}
-	li::before {
-		position: absolute;
-		content: '';
-		width: 10px;
-		height: 3px;
-		display: block;
-		transition: 0.4s;
-		background-image: linear-gradient(90deg, #38ef7d, #11998e);
-		bottom: 2px;
-		right: 0;
-		opacity: 0;
-	}
-	li:hover::after {
-		width: 40%;
-		opacity: 1;
-	}
-	li:hover::before {
-		width: 60%;
-		opacity: 1;
+		color: black;
+		text-decoration: underline 2px black;
 	}
 	li::marker {
-		color: #11998e;
+		color: var(--text-black);
 	}
 </style>
