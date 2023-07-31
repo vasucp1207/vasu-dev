@@ -132,7 +132,7 @@
 		margin-bottom: 1rem;
 	}
 	.gmail {
-		font-size: 18px;
+		font-size: 16px;
 		margin-top: 1rem;
 		color: var(--text-black);
 	}
@@ -160,9 +160,6 @@
 	}
 	.contact::marker {
 		color: white !important;
-	}
-	.contact:after {
-		left: 23px;
 	}
 	li:hover {
 		color: black;
